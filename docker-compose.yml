@@ -2,7 +2,7 @@ cmonitor:
     container_name: cmonitor
     image: supergramm/cmonitor
     environment:
-      - CM_API_KEY=47a7b343e91b7ef20d207eb2ceaeb769
-      - CM_API_CLIENT=7adba2a23dcba98c7a0a49f43092cdf3
+      - CM_API_KEY=
+      - CM_API_CLIENT=
     ports:
       - "8080:8080"
