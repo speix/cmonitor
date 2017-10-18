@@ -36,14 +36,24 @@ func (h GetListsHandler) ServeHTTP(w http.ResponseWriter, r *http.Request){
 	lists := model.Lists{}
 	err := lists.Get(cmService)
 	if err != nil {
+		response.Message = err.Error()
+		responseJson, _ := json.Marshal(response)
+
 		w.WriteHeader(400)
-		w.Write([]byte(err.Error()))
+		w.Write(responseJson)
+
+		return
 	}
 
 	data, err := json.Marshal(lists)
 	if err != nil {
+		response.Message = err.Error()
+		responseJson, _ := json.Marshal(response)
+
 		w.WriteHeader(400)
-		w.Write([]byte(err.Error()))
+		w.Write(responseJson)
+
+		return
 	}
 
 	w.Write(data)
