@@ -29,8 +29,8 @@ type ServiceResponse struct {
 func (h GetListsHandler) ServeHTTP(w http.ResponseWriter, r *http.Request){
 
 	w.Header().Set("Content-Type", "application/json")
-	w.WriteHeader(200)
-
+	response := ServiceResponse{}
+	
 	cmService := services.CampaignMonitor{}
 
 	lists := model.Lists{}
@@ -56,6 +56,7 @@ func (h GetListsHandler) ServeHTTP(w http.ResponseWriter, r *http.Request){
 		return
 	}
 
+	w.WriteHeader(200)
 	w.Write(data)
 }
 
@@ -65,7 +66,6 @@ func (h GetListSubscribersHandler) ServeHTTP(w http.ResponseWriter, r *http.Requ
 	response := ServiceResponse{}
 
 	list_id, _ := r.URL.Query()["list"]
-
 
 	cmService := services.CampaignMonitor{}
 
