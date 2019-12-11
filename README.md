@@ -39,6 +39,6 @@ https://hub.docker.com/r/supergramm/cmonitor/
 
 ### Preview
 <p float="left">
-<img src="https://d36vhvif6yp6yo.cloudfront.net/main/images/github/cmonitor2.jpg" alt="" data-canonical-src="https://d36vhvif6yp6yo.cloudfront.net/main/images/github/cmonitor1.jpg" height="500"/>
-<img src="https://d36vhvif6yp6yo.cloudfront.net/main/images/github/cmonitor1.jpg" alt="" data-canonical-src="https://d36vhvif6yp6yo.cloudfront.net/main/images/github/cmonitor1.jpg" height="500"/>
+<img src="https://s3.eu-central-1.amazonaws.com/files.supergramm.com/main/images/github/cmonitor1.jpg" alt="" data-canonical-src="https://s3.eu-central-1.amazonaws.com/files.supergramm.com/main/images/github/cmonitor1.jpg" height="500"/>
+<img src="https://s3.eu-central-1.amazonaws.com/files.supergramm.com/main/images/github/cmonitor2.jpg" alt="" data-canonical-src="https://s3.eu-central-1.amazonaws.com/files.supergramm.com/main/images/github/cmonitor2.jpg" height="500"/>
 </p>
